@@ -1,0 +1,204 @@
+body { 
+      padding-top: 10px; 
+}
+
+img{
+	vertical-align: middle;
+}
+
+.devmargin{
+	        margin-left: 0.5em;
+            margin-right: 0.5em;
+}
+
+.buttonmargin{
+	          margin-bottom: 10px;
+}
+
+.pmargin{
+	     margin-bottom: 2em;
+}
+
+.footer {
+         background: #061D25;
+         padding: 10px 0;
+}
+
+.footer a {
+            color: #70726F;
+            font-size: 20px;
+            padding: 10px;
+            border-right: 1px solid #70726F;
+            transition: all .5s ease;
+}
+
+.footer a:first-child {
+                        border-left: 1px solid #70726F;
+}
+
+.footer a:hover {
+                 color: white;
+}
+
+.navbar .navbar-nav{
+	                border: 0;
+	                text-align:center;
+	                display: inline-block;
+                    float: none;
+}
+
+.navbar .navbar-collapse {
+                          text-align: center;
+}
+
+.icon-bar {
+           background-color: black;
+}
+
+.navbar-toggle {
+               float:none;
+}   
+.navbar-header {
+                text-align:center;
+}
+
+a{ 
+  color: black; 
+} 
+
+.container-fluid { 
+      max-width: 1200px; 
+}
+
+hr {
+    border: 0;
+    width: 100%;
+    color: #f00;
+    background-color: #6f4e37;
+    height: 1px;
+}
+
+html,
+body{
+	 font-size: 1em; 
+	 line-height: 1.5;
+}
+
+.h1,
+h1{
+	margin: .67em 0; 
+	font-size: 2.25em;
+}
+
+.middle{
+	     text-align: center;
+}
+
+h3{
+	margin: .83em 0 .67em;
+	font-size: 1.5em; 
+}
+
+
+.h4, 
+h4
+{
+	/*margin: 1em 0 .8em; */
+	font-size: 1.25em; 
+}
+
+.h5, 
+h5
+{
+	/*margin: 1em 0 .8em; */
+	font-size: 1em; 
+}
+
+p,
+ul { 
+        margin-bottom: 1.25em;
+}
+
+blockquote {
+	        padding: .56em 1.1em; 
+	        margin: 0 0 1.1em; 
+	        font-size: 1em; 
+	        color: black;
+}
+
+caption{
+	    padding-top: .5em; 
+	    padding-bottom: .5em; 
+}
+
+
+.navbar-brand {	
+font-size: 1.125em;
+}
+
+.navbar-nav > li > a  { 
+                       font-size: .875em;
+}
+
+.paraf {
+	    border-bottom: 1px solid black;
+	    display: inline-block;
+	    text-align: center;
+}
+
+
+.paraf1 {
+         border-bottom: 1px solid black;
+	     display: inline-block;
+	     text-align: center;
+	     text-align:justify;
+}
+.paraf2 {
+	     display: inline-block;
+	     text-align: center;
+	     text-align:justify;
+}
+
+
+
+@media (min-width: 768px){
+	html,
+	body{
+		font-size: 18px;
+		line-height: 1.5;
+	}
+}
+
+@media (min-width: 992px){
+	html,
+	body{
+		font-size: 20px;
+		line-height: 1.5;
+	}
+}
+
+@media (min-width: 1200px){
+	html,
+	body{
+		font-size: 21px;
+		line-height: 1.5;
+	}
+}
+
+
+footer {
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+}
+
+
+  .nospace{
+    padding: 0px;
+    margin-bottom: 0px;    
+  }
+  
+  
+ .well {
+    background: rgb(192,192,192);
+}

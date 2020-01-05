@@ -1,0 +1,5 @@
+1) Bootstrap feature (CSS) = Grid system. Appears on Project page and Index page.
+
+2) Bootstrap feature (Bootstrap) = Responsive embed. Appears as embeded YouTube video on Project page .
+
+3) Bootstrap feature (JavaScript) = Carousel. Appears on Project page as first image.
