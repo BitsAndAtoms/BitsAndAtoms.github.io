@@ -40,7 +40,10 @@ img{
                  color: white;
 }
 
+
+
 .navbar .navbar-nav{
+	                font-size: 23px;
 	                border: 0;
 	                text-align:center;
 	                display: inline-block;
