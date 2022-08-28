@@ -1,5 +1,5 @@
 body { 
-      padding-top: 10px; 
+      padding-top: 0px; 
 }
 
 img{
@@ -163,7 +163,7 @@ font-size: 1.125em;
 	background-image: url('../images/banner.jpg');
 	background-repeat: no-repeat;
 	
-	height: 200px;
+	height: 150px;
 	background-color: purple;
 	background-position: center;
   }
