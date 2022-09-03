@@ -1,5 +1,6 @@
 body { 
       padding-top: 0px; 
+	  
 }
 
 img{
@@ -120,7 +121,6 @@ ul {
   margin-bottom: 1.25em;
   text-indent: 50px;
   text-align: justify;
-  letter-spacing: 1px;
 }
 
 blockquote {
@@ -163,7 +163,6 @@ font-size: 1.125em;
 
 
 .paraf1 {
-         border-bottom: 1px solid black;
 	     display: inline-block;
 	     text-align: center;
 	     text-align:justify;
@@ -173,7 +172,11 @@ font-size: 1.125em;
 	     text-align: center;
 	     text-align:justify;
 }
-
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  }
 #bannerimage {
 	width: 100%;
 	background-image: url('../images/banner.jpg');
