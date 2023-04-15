@@ -142,13 +142,14 @@ ul {
 .poem {
 	font-family: 'Poirot One', cursive;
 	line-height: 1.5;
-	font-size: 1.1em;
+	font-size: 0.8em;
 	margin: 20px 0;
 	text-align: center;
 	background-color: #fdf6e3;
 	padding: 20px;
 	border-radius: 5px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	word-wrap: break-word;
 }
 
 .poem p {
