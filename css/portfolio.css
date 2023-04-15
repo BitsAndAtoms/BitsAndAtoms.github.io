@@ -144,12 +144,24 @@ ul {
 	line-height: 1.5;
 	font-size: 0.8em;
 	margin: 20px 0;
-	text-align: center;
-	background-color: #fdf6e3;
-	padding: 20px;
-	border-radius: 5px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-	word-wrap: break-word;
+    text-align: center;
+    background-color: #e9ab65; /* Light yellow sticky note color */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    max-height: 300px; /* Adjust the height based on your preference */
+    overflow-y: scroll; /* Enable vertical scrolling */
+}
+
+.poem::before {
+    content: '📌 Data Haiku';
+    font-size: 1.5em;
+    position: absolute;
+    top: -10px;
+    left: 30%;
+    transform: translateX(-50%);
+    z-index: 2;
 }
 
 .poem p {
@@ -158,6 +170,19 @@ ul {
 
 .poem p:last-child {
 	margin-bottom: 0;
+}
+.poem::-webkit-scrollbar {
+    width: 6px;
+}
+
+.poem::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.poem::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
 }
 blockquote {
 	background: #f9f9f9;
