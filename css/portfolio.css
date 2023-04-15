@@ -138,6 +138,13 @@ ul {
 	color: #555;
 	margin-top: 10px;
 }
+.poem {
+	font-family: 'Georgia', serif;
+	line-height: 1.5;
+	font-size: 1.1em;
+	margin: 20px 0;
+	text-align: center;
+}
 blockquote {
 	background: #f9f9f9;
 	border-left: 10px solid #ccc;
