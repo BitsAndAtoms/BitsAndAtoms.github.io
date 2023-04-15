@@ -1,57 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-		<meta charset="utf-8">
-		<title>Siddhartha Gupta | Portfolio</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="keywords" content="Image processing, Java, Python, Jobseeker, Teaching">
-		<meta name="Description" lang="en" content="Siddhartha Gupta :: programming and applied engineering">
-		<meta name="Siddhartha Gupta" content="programmer, researcher and engineer">
-		<meta name="robots" content="Jobseeker, Machine learning, Python, Java, C#, Image Processing, Teaching">
-		<link rel="shortcut icon" href="images/simplex.ico">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
-		<link rel="stylesheet" href="css/portfolio.css">
-	</head>
-
-	<body>
-		<iframe src="header.html" style="width:100%; height:300px;" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
-		<div class="container-fluid">
-			<div class="row">
-			   <div class="col-sm-12">
-				  <div class="row margin-b-2">
-					 <div class="col-sm-4">
-					   <img class="img-responsive center" src="images/los_angles.jpg" alt="picture of los angeles" style="max-height:500px">
-					   <div class="caption" style="
-					   text-align:center;">
-						Santa Monica<br>
-						Genetic society of America Conf., 2017</p>
-						<h5 class ="middle">Download CV: <a href="pdf/cv.pdf" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></h5>
-					  </div>
-					 </div>
-   
-				  <div class="col-sm-8">
-						<h4>Work Experience: </h4>
-						   <blockquote>
-							 <p>Eternity to a photon is a flash </p><br>
-							 <cite style="text-align: right; display: block;">~ Unknown</cite>
-						   </blockquote>
-					   
-					   <ul>
-						<li>Cloud Software Engineer, Schlumberger, 2022-Present</li>
-						<li>Lead Software Engineer, NemaLife, 2022-2020</li>
-						<li>Research Programmer | STEM Instructor, Texas Tech, 2015-2019</li>
-						<li>Member Engineering Staff, Reliance Industries, 2012-2014</li>
-						
-					</ul>
-				  </div>
-				  </div>
-			   </div>
-		   </div>
-			<hr>
-			  <iframe src="footer.html" style="width:100%; height:100px;" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+  <head id="common-head">
+    <style>
+      .resume-container {
+        padding: 30px 0;
+      }
+      .resume-photo {
+        max-height: 500px;
+        margin-bottom: 20px;
+      }
+      .resume-section-title {
+        font-weight: bold;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+      .work-experience-item {
+        margin-bottom: 20px;
+      }
+      .work-experience-title {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 5px;
+      }
+      .work-experience-date {
+        font-style: italic;
+        margin-bottom: 5px;
+      }
+      .work-experience-description {
+        font-size: 1.1em;
+        line-height: 1.4em;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function() {
+        $("#common-head").load("common-head.html");
+      });
+    </script>
+    <iframe src="header.html" style="width:100%; height:300px;" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+      
+    <main class="container-fluid resume-container">
+		<div class="row">
+			<div class="col-sm-4">
+			  <img class="img-responsive center resume-photo" src="images/los_angles.jpg" alt="Picture of Los Angeles">
+			  <div class="caption text-center">
+				Santa Monica<br>
+				Genetic Society of America Conf., 2017
+				<h5 class="middle">Download CV: <a href="pdf/cv.pdf" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></h5>
+			  </div>
 			</div>
-	 </body>
-</html>
+			<div class="col-sm-8">
+			  <h4 class="resume-section-title">Work Experience:</h4>
+			  <blockquote>
+				<p>Eternity to a photon is a flash</p>
+				<cite style="text-align: right; display: block;">~ Unknown</cite>
+			  </blockquote>
+			  <div class="work-experience-item">
+				<h5 class="work-experience-title">Cloud Software Engineer, Schlumberger</h5>
+				<p class="work-experience-date">(2022 - Present)</p>
+				<p class="work-experience-description">- Developing and enhancing the company's Data Science Platform<br>
+				  - Leveraging expertise in machine learning, data engineering, and software development<br>
+				  - Improving the reliability and accuracy of SLB’s data solutions</p>
+			  </div>
+			  <div class="work-experience-item">
+				<h5 class="work-experience-title">Lead Software Engineer, NemaLife</h5>
+				<p class="work-experience-date">(2020 - 2022)</p>
+				<p class="work-experience-description">- Spearheaded the development of desktop GUI (NemaCode) for NemaLife’s Infinity Platform<br>
+				  - Implemented a Django-based labeling website called NemaStudio<br>
+				  - Utilized Google Colab to evaluate and implement advanced machine learning models for microorganism detection<br>
+				  - Collaborated closely with an external image processing specialist to develop an innovative velocimetry app, and more.
+				</p>
+			  </div>
+			  <div class="work-experience-item">
+				<h5 class="work-experience-title">Research Programmer | STEM Instructor, Texas Tech</h5>
+				<p class="work-experience-date">(2015 - 2019)</p>
+				<p class="work-experience-description">- Collaborated with faculty and researchers on projects related to data analytics, scientific computing, and high-performance computing<br>
+				  - Taught courses and workshops on Python, scientific computing, data analytics, and machine learning to students and researchers across various disciplines.
+				</p>
+			  </div>
+			  <div class="work-experience-item">
+				<h5 class="work-experience-title">Member Engineering Staff, Reliance Industries</h5>
+				<p class="work-experience-date">(2012 - 2014)</p>
+				<p class="work-experience-description">- Worked on developing and enhancing the company's proprietary software solutions for various industries, including oil and gas, petrochemicals, and textiles.
+				</p>
+			  </div>
+			</div>
+		  </div>
+		  <hr>
+		  <iframe src="footer.html" style="width:100%; height:100px;" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+		</main>
+	

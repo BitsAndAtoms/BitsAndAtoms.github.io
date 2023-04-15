@@ -289,3 +289,119 @@ footer {
  .well {
     background: rgb(192,192,192);
 }
+
+.project-container {
+	padding: 30px 0;
+  }
+  .project-item {
+	margin-bottom: 30px;
+  }
+  .project-image {
+	margin-bottom: 15px;
+  }
+  .project-title {
+	font-weight: bold;
+	font-size: 1.5em;
+	margin-bottom: 10px;
+  }
+  .project-description {
+	font-size: 1.1em;
+	line-height: 1.4em;
+  }
+
+  .resume-container {
+	padding: 30px 0;
+  }
+  .resume-photo {
+	max-height: 500px;
+	margin-bottom: 20px;
+  }
+  .resume-section-title {
+	font-weight: bold;
+	font-size: 1.5em;
+	margin-bottom: 10px;
+  }
+  .work-experience-item {
+	margin-bottom: 20px;
+  }
+  .work-experience-title {
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-bottom: 5px;
+  }
+  .work-experience-date {
+	font-style: italic;
+	margin-bottom: 5px;
+  }
+  .work-experience-description {
+	font-size: 1.1em;
+	line-height: 1.4em;
+  }
+
+  .contact-container {
+	padding: 2rem;
+  }
+  
+  .contact-title {
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 2rem;
+	text-align: center;
+  }
+  
+  .contact-form-wrapper {
+	background-color: #f8f9fa;
+	border-radius: 1rem;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	padding: 2rem;
+	max-width: 600px;
+	margin: 0 auto;
+  }
+  
+  .contact-form .form-group {
+	margin-bottom: 1.5rem;
+  }
+  
+  .contact-form label {
+	font-weight: bold;
+	display: block;
+	margin-bottom: 0.5rem;
+  }
+  
+  .contact-form .form-control {
+	display: block;
+	width: 100%;
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	border: 1px solid #ced4da;
+	border-radius: 0.25rem;
+  }
+  
+  .contact-form .help-block {
+	font-size: 0.85rem;
+	color: #6c757d;
+	margin-top: 0.25rem;
+  }
+
+  .btn-submit {
+	background-color: #007bff;
+	border-color: #007bff;
+	color: #fff;
+	font-size: 1rem;
+	padding: 0.5rem 1rem;
+	border-radius: 0.25rem;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  
+  .btn-submit:hover {
+	background-color: #0069d9;
+	border-color: #0062cc;
+  }
+  
+  .btn-submit:focus {
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  
