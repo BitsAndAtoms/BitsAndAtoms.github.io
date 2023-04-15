@@ -1,154 +1,172 @@
 body { 
-      padding-top: 0px; 
-	  
+	padding-top: 0px; 
 }
 
 img{
-	vertical-align: middle;
+  vertical-align: middle;
 }
 
 .devmargin{
-	        margin-left: 0.5em;
-            margin-right: 0.5em;
+		  margin-left: 0.5em;
+		  margin-right: 0.5em;
 }
 
 .buttonmargin{
-	          margin-bottom: 10px;
+			margin-bottom: 10px;
 }
 
 .pmargin{
-	     margin-bottom: 2em;
+	   margin-bottom: 2em;
 }
 
 .footer {
-         background: #061D25;
-         padding: 10px 0;
+	   background: #061D25;
+	   padding: 10px 0;
 }
 
 .footer a {
-            color: #70726F;
-            font-size: 20px;
-            padding: 10px;
-            border-right: 1px solid #70726F;
-            transition: all .5s ease;
+		  color: #70726F;
+		  font-size: 20px;
+		  padding: 10px;
+		  border-right: 1px solid #70726F;
+		  transition: all .5s ease;
 }
 
 .footer a:first-child {
-                        border-left: 1px solid #70726F;
+					  border-left: 1px solid #70726F;
 }
 
 .footer a:hover {
-                 color: white;
+			   color: white;
+}
+.nav {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.1em;
+	font-weight: 500;
+	color: DarkSlateGray;
 }
 
+.nav li {
+	margin: 0 10px;
+}
 
+.nav a:hover {
+	text-decoration: underline;
+}
 
+#bannerimage {
+	text-align: center;
+}
 .navbar .navbar-nav{
-	                font-size: 23px;
-	                border: 0;
-	                text-align:center;
-	                display: inline-block;
-                    float: none;
+				  font-size: 23px;
+				  border: 0;
+				  text-align:center;
+				  display: inline-block;
+				  float: none;
 }
 
 .navbar .navbar-collapse {
-                          text-align: center;
+						text-align: center;
 }
 
 .icon-bar {
-           background-color: black;
+		 background-color: black;
 }
 
 .navbar-toggle {
-               float:none;
+			 float:none;
 }   
 .navbar-header {
-                text-align:center;
+			  text-align:center;
 }
 
 a{ 
-  color: black; 
+color: black; 
 } 
 
 .container-fluid { 
-      max-width: 1200px; 
+	max-width: 1200px; 
 }
 
 hr {
-    border: 0;
-    width: 100%;
-    color: #f00;
-    background-color: #6f4e37;
-    height: 1px;
+  border: 0;
+  width: 100%;
+  color: #f00;
+  background-color: #6f4e37;
+  height: 1px;
 }
 
 html,
 body{
-	 font-size: 1em; 
-	 line-height: 1.5;
+   font-size: 1em; 
+   line-height: 1.5;
 }
 
 .h1,
-h1 { color: rgb(255, 196, 0); font-family: "Great Vibes", cursive; font-size: 2.25em; font-weight: normal; margin-bottom: 0px; margin-top: 40px; text-align: center; text-shadow: 0 1px 1px rgb(255, 255, 255); }
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.5em;
+	font-weight: 700;
+	margin: 0;
+}
 .middle{
-	     text-align: center;
+	   text-align: center;
 }
 
 h3{
-	margin: .83em 0 .67em;
-	font-size: 1.5em; 
+  margin: .83em 0 .67em;
+  font-size: 1.5em; 
 }
-
 
 .h4, 
 h4
 {
-	/*margin: 1em 0 .8em; */
-	font-size: 1.25em; text-align: center;
-	text-transform: sentencecase;
-	color: #4CAF50;
+  /*margin: 1em 0 .8em; */
+  font-size: 1.25em; text-align: center;
+  text-transform: sentencecase;
+  color: #4CAF50;
 }
 
 .h5, 
 h5
 {
-	/*margin: 1em 0 .8em; */
-	font-size: 1em; 
+  /*margin: 1em 0 .8em; */
+  font-size: 1em; 
 }
 
 p,
 ul { 
-  margin-bottom: 1.25em;
-  text-indent: 50px;
-  text-align: justify;
+margin-bottom: 1.25em;
+text-indent: 50px;
+text-align: justify;
 }
 .quote {
-	background-color: #f9f9f9;
-	border-left: 5px solid #7c7c7c;
-	padding: 20px;
-	margin: 20px;
-	font-style: italic;
-	font-size: 1.2em;
+  background-color: #f9f9f9;
+  border-left: 5px solid #7c7c7c;
+  padding: 20px;
+  margin: 20px;
+  font-style: italic;
+  font-size: 1.2em;
 }
 
 .quote cite {
-	display: block;
-	text-align: right;
-	font-size: 1.1em;
-	color: #555;
-	margin-top: 10px;
+  display: block;
+  text-align: right;
+  font-size: 1.1em;
+  color: #555;
+  margin-top: 10px;
 }
 
 .poem {
-	font-family: 'Poirot One', cursive;
-	line-height: 1.5;
-	font-size: 1.1em;
-	margin: 20px 0;
-	text-align: center;
-	background-color: #fdf6e3;
-	padding: 20px;
-	border-radius: 5px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Poirot One', cursive;
+  line-height: 1.5;
+  font-size: 1.1em;
+  margin: 20px 0;
+  text-align: center;
+  background-color: #fdf6e3;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .poem p {
