@@ -157,7 +157,7 @@ ul {
     max-height: 300px; /* Adjust the height based on your preference */
     overflow-y: scroll; /* Enable vertical scrolling */
 	transform: rotate(-3deg); /* Rotation */ 
-	
+
 }
 
 .poem::before {
@@ -312,10 +312,16 @@ footer {
 	margin-bottom: 10px;
   }
   .project-description {
-	font-size: 1.1em;
-	line-height: 1.4em;
-  }
-
+        background-color: #f7f7f7;
+        border: 1px solid #d4d4d4;
+        padding: 20px;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 14px;
+        line-height: 1.5;
+        border-radius: 5px;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+        margin-top: 20px;
+      }
   .resume-container {
 	padding: 30px 0;
   }
