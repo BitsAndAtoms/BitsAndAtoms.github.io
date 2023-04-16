@@ -156,16 +156,19 @@ ul {
     position: relative;
     max-height: 300px; /* Adjust the height based on your preference */
     overflow-y: scroll; /* Enable vertical scrolling */
+	transform: rotate(-3deg); /* Rotation */ 
+	
 }
 
 .poem::before {
-    content: '📌 Data Haiku';
+    content: 'Data 📌 Haiku';
     font-size: 1.5em;
     position: absolute;
     top: -10px;
     left: 30%;
     transform: translateX(-50%);
     z-index: 2;
+	
 }
 
 .poem p {
