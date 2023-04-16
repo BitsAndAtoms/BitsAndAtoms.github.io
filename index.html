@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head id="common-head">    
-  </head>
+    <head id="common-head">
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+          $(function() {
+            $("#common-head").load("common-head.html");
+          });
+        </script>
+      </head>
 <body>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    $(function() {
-    $("#common-head").load("common-head.html");
-  });
-</script>
-    <header>
         <iframe src="header.html" style="width:100%; height:220px;" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
-    </header>
     <meta charset="UTF-8">
 
     <main class="container-fluid">
         <div class="row margin-b-2">
-                <div class="col-sm-4">
-                    <img id="img-override" class="img-responsive image-container center " src="images/siddhartha_gupta.jpg" alt="Picture of Siddhartha Gupta" style="height:200px;">
+                <div class="col-sm-4 text-center">
+                    <img id="img-override"  class="img-responsive image-container center " src="images/siddhartha_gupta.jpg" alt="Picture of Siddhartha Gupta" style="height:200px;">
                 </div>
                 <div class="col-sm-4">
                     
-                    <h4>Culture & Craziness on Bit Ships</h4>
+                    <h4>Dunes, Dreams & Spice</h4>
                     <div class="quote">
                         <p>
                             Come you lost Atoms to your Centre draw.<br>
@@ -55,5 +54,5 @@
         <hr>
     </main>
         <iframe src="footer.html" style="width:100%; height:100px;" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
-</body>
+    </body>
 </html>
