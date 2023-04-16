@@ -2,39 +2,23 @@
 <html lang="en">
   <head id="common-head">
     <meta charset="UTF-8">
-  </head>
-  <body>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
       $(function() {
         $("#common-head").load("common-head.html");
       });
     </script>
+  </head>
+  <body>
     <iframe src="header.html" style="width:100%; height:300px;" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
 
     <main class="container contact-container">
       <h3 class="contact-title">Contact Me</h3>
-      <div class="contact-form-wrapper">
-        <form method="post" action="https://formsubmit.co/d053106bf54de8abd33b886378cb7610" onsubmit="return validateForm();" class="contact-form">
-          <div class="form-group">
-            <label for="contactName">Name</label>
-            <input type="text" class="form-control" id="contactName" placeholder="Enter your name" required>
-          </div>
-          <div class="form-group">
-            <label for="contactAddress">* Email</label>
-            <input type="email" class="form-control" id="contactAddress" placeholder="Enter email" required>
-            <p class="help-block">Make sure you use a valid email address</p>
-          </div>
-          <div class="form-group">
-            <label for="comment">Query</label>
-            <textarea class="form-control" id="comment" rows="5" placeholder="Enter your query" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-submit">Submit</button>
-          <p id="newdiv"></p>
-        </form>
-      </div>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdtxEpxMEYOHOwGilUHSvHhS9yBdYpg8UvHpMi-Q2YbLp48Lg/viewform?embedded=true" width="640" height="850" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </main>
     <hr>
     <iframe src="footer.html" style="width:100%; height:100px;" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
