@@ -1,57 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-		<meta charset="utf-8">
-		<title>Siddhartha Gupta | Portfolio</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="keywords" content="Image processing, Java, Python, Jobseeker, Teaching">
-		<meta name="Description" lang="en" content="Siddhartha Gupta :: programming and applied engineering">
-		<meta name="Siddhartha Gupta" content="programmer, researcher and engineer">
-		<meta name="robots" content="Jobseeker, Machine learning, Python, Java, C#, Image Processing, Teaching">
-		<link rel="shortcut icon" href="images/simplex.ico">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
-		<link rel="stylesheet" href="css/portfolio.css">
-	</head>
-
-	<body>
-		<iframe src="header.html" style="width:100%; height:300px;" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
-		<div class="container-fluid">
-			<div class="row">
-			   <div class="col-sm-12">
-				  <div class="row margin-b-2">
-					 <div class="col-sm-4">
-					   <img class="img-responsive center" src="images/los_angles.jpg" alt="picture of los angeles" style="max-height:500px">
-					   <div class="caption" style="
-					   text-align:center;">
-						Santa Monica<br>
-						Genetic society of America Conf., 2017</p>
-						<h5 class ="middle">Download CV: <a href="pdf/cv.pdf" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></h5>
-					  </div>
-					 </div>
-   
-				  <div class="col-sm-8">
-						<h4>Work Experience: </h4>
-						   <blockquote>
-							 <p>Eternity to a photon is a flash </p><br>
-							 <cite style="text-align: right; display: block;">~ Unknown</cite>
-						   </blockquote>
-					   
-					   <ul>
-						<li>Cloud Software Engineer, Schlumberger, 2022-Present</li>
-						<li>Lead Software Engineer, NemaLife, 2022-2020</li>
-						<li>Research Programmer | STEM Instructor, Texas Tech, 2015-2019</li>
-						<li>Member Engineering Staff, Reliance Industries, 2012-2014</li>
-						
-					</ul>
+  <head id="common-head">
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function() {
+        $("#common-head").load("common-head.html");
+      });
+    </script>
+    <iframe src="header.html" style="width:100%; height:220px;" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+    <main class="container-fluid resume-container">
+		<meta charset="UTF-8">
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="photo-wrapper">
+					<div class="sticky-note">⏳ Eternity to a photon is a flash ⚡</div>
+					<img class="img-responsive center resume-photo" src="images/los_angles.jpg" alt="Picture of Los Angeles">
 				  </div>
-				  </div>
-			   </div>
-		   </div>
-			<hr>
-			  <iframe src="footer.html" style="width:100%; height:100px;" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+				  <div class="caption text-center">
+				Santa Monica Pier<br>Genetic Society of America Conference, 2017
+				<h5 class="middle">Download CV: <a href="https://drive.google.com/file/d/1yzWKYN2auYvdlnhq-SIy2gTnIoI95VBT/view?usp=sharing" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></h5>
+			  </div>
 			</div>
-	 </body>
-</html>
+			<div class="col-sm-8">
+			  <h4 >Work Experience</h4>
+			  
+			  <div class="work-experience-item">
+				<h5 class="work-experience-title">Cloud Software Engineer, Schlumberger<span class="work-experience-date">2022 - Present</span></h5>
+				<p class="work-experience-description">- Developing and enhancing the company&apos;s Data Science Platform<br>
+				  - Leveraging expertise in machine learning, data engineering, and software development<br>
+				  - Improving the reliability and accuracy of SLB&apos;s data solutions</p>
+			  </div>
+			  <div class="work-experience-item">
+				<h5 class="work-experience-title">Lead Software Engineer, NemaLife<span class="work-experience-date">2020 - 2022</span></h5>
+				<p class="work-experience-description">- Spearheaded the development of desktop GUI (NemaCode) for NemaLife&apos;s Infinity Platform<br>
+				  - Implemented a Django-based labeling website called NemaStudio<br>
+				  - Utilized Google Colab to implement advanced machine learning models for microorganism detection<br>
+				  - Collaborated with external research specialists to develop an innovative velocimetry app, and more.
+				</p>
+			  </div>
+			  <div class="work-experience-item">
+				<h5 class="work-experience-title">Research Programmer | STEM Instructor, Texas Tech<span class="work-experience-date">2015 - 2019</span></h5>
+				<p class="work-experience-description">- Collaborated on projects related to data analytics, scientific computing, and high-performance computing<br>
+				  - Taught courses and workshops on Python, scientific computing, data analytics, and machine learning to students and researchers across various disciplines.
+				</p>
+			  </div>
+			  <div class="work-experience-item">
+				<h5 class="work-experience-title">Member Engineering Staff, Reliance
+	  
+	  
+	  
+				<span class="" class="work-experience-date">2012 - 2014</span></h5>
+				<p class="work-experience-description">- Worked on developing and enhancing the company's SAP software solutions for energy accounting.
+				</p>
+			  </div>
+			</div>
+		  </div>
+		  <hr>
+		  <iframe src="footer.html" style="width:100%; height:100px;" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+		</main>
+	
