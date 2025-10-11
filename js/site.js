@@ -1,9 +1,10 @@
 (function () {
   function setActiveNavLink() {
+    // Use the last segment of the path, or default to 'index.html' if empty (e.g., root path)
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     document.querySelectorAll('[data-nav-link]').forEach((link) => {
       const target = link.getAttribute('href');
-      if (target === currentPage || (!currentPage && target === 'index.html')) {
+      if (target === currentPage) {
         link.classList.add('active');
       }
     });
