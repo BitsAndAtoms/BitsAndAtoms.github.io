@@ -143,13 +143,13 @@ h4 {
   flex-direction: column;
   align-items: center;
   gap: 0.4rem;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.08em;
 }
 
 .site-title__latin {
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.28em;
+  letter-spacing: 0.12em;
 }
 
 .site-title__divider {
@@ -280,7 +280,8 @@ h4 {
 }
 
 @media (min-width: 768px) {
-  .site-nav__toggle {
+  .site-nav__toggle,
+  .js-enabled .site-nav__toggle {
     display: none;
   }
 
