@@ -1,4 +1,38 @@
 (function () {
+  function loadIncludes() {
+    const includeElements = document.querySelectorAll('[data-include]');
+
+    if (!includeElements.length) {
+      return Promise.resolve();
+    }
+
+    const loaders = Array.from(includeElements).map((element) => {
+      const source = element.getAttribute('data-include');
+
+      if (!source) {
+        return Promise.resolve();
+      }
+
+      return fetch(source)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`Failed to load include: ${source}`);
+          }
+
+          return response.text();
+        })
+        .then((html) => {
+          element.outerHTML = html;
+        })
+        .catch((error) => {
+          console.error(error);
+          element.outerHTML = '';
+        });
+    });
+
+    return Promise.all(loaders);
+  }
+
   function setActiveNavLink() {
     // Use the last segment of the path, or default to 'index.html' if empty (e.g., root path)
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
@@ -42,15 +76,24 @@
     updateForViewport();
   }
 
-  function init() {
-    document.documentElement.classList.add('js-enabled');
-    setActiveNavLink();
-    initNavToggle();
-  }
+  (function init() {
+    const start = () => {
+      document.documentElement.classList.add('js-enabled');
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
+      loadIncludes()
+        .catch((error) => {
+          console.error(error);
+        })
+        .finally(() => {
+          setActiveNavLink();
+          initNavToggle();
+        });
+    };
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', start);
+    } else {
+      start();
+    }
+  })();
 })();
