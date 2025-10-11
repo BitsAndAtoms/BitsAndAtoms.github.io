@@ -1,58 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head id="common-head">
-        <meta charset="UTF-8">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script>
-          $(function() {
-            $("#common-head").load("common-head.html");
-          });
-        </script>
-      </head>
-<body>
-        <iframe src="header.html" style="width:100%; height:220px;" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+  <head>
     <meta charset="UTF-8">
-
-    <main class="container-fluid">
-        <div class="row margin-b-2">
-                <div class="col-sm-4 text-center">
-                    <img id="img-override"  class="img-responsive image-container center " src="images/siddhartha_gupta.jpg" alt="Picture of Siddhartha Gupta" style="height:200px;">
-                </div>
-                <div class="col-sm-4">
-                    
-                    <h4>Dunes, Dreams & Spice</h4>
-                    <div class="quote">
-                        <p>
-                            Come you lost Atoms to your Centre draw.<br>
-                            And be the Eternal Mirror that you saw.<br>
-                            &emsp;&emsp; Rays that have wander'd into Darkness wide.<br>
-                            Return and back into your Sun subside
-                        </p>
-                        <cite>~ Farid al-Din Attar</cite>
-                    </div>
-                    
-                </div>
-                <div class="col-sm-4">
-                    <div class="poem">
-                My journey has taken me<br>
+    <title>About | Sid Gupta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Image processing, Java, Python, Jobseeker, Teaching">
+    <meta name="description" content="Sid Gupta — programming, applied engineering, and research portfolio.">
+    <meta name="author" content="Sid Gupta">
+    <meta name="robots" content="index, follow">
+    <link rel="shortcut icon" href="images/simplex.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <script defer src="js/site.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__banner">
+        <div class="site-container">
+          <h1 class="site-title" aria-label="Sid Gupta">
+            <span class="site-title__latin">Sid</span>
+            <span class="site-title__paren" lang="hi">(सिद्धार्थ)</span>
+            <span class="site-title__latin site-title__surname">Gupta</span>
+          </h1>
+          <p class="site-tagline">Engineering clarity across data and systems.</p>
+        </div>
+      </div>
+      <div class="site-nav">
+        <div class="site-container site-nav__inner">
+          <button class="site-nav__toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="site-nav__toggle-bar"></span>
+          </button>
+          <nav id="primary-navigation" class="site-nav__menu" aria-label="Primary">
+            <ul class="site-nav__list">
+              <li class="site-nav__item"><a class="site-nav__link" data-nav-link href="index.html">About</a></li>
+              <li class="site-nav__item"><a class="site-nav__link" data-nav-link href="resume.html">Experience</a></li>
+              <li class="site-nav__item"><a class="site-nav__link" data-nav-link href="project.html">Research</a></li>
+              <li class="site-nav__item"><a class="site-nav__link" data-nav-link href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="page-content">
+      <section class="hero">
+        <div class="site-container">
+          <div class="hero__grid">
+            <figure class="hero__portrait card">
+              <img class="hero__portrait-image" src="images/siddhartha_gupta.jpg" alt="Portrait of Sid Gupta">
+              <figcaption class="hero__caption">Dunes, Dreams &amp; Spice</figcaption>
+            </figure>
+            <blockquote class="quote card">
+              <p>
+                Come you lost Atoms to your Centre draw.<br>
+                And be the Eternal Mirror that you saw.<br>
+                Rays that have wander'd into Darkness wide.<br>
+                Return and back into your Sun subside.
+              </p>
+              <cite>Farid al-Din Attar</cite>
+            </blockquote>
+            <div class="poem card">
+              <h2 class="poem__title">Data 📌 Haiku</h2>
+              <p>My journey has taken me<br>
                 Through halls of academia 🎓<br>
                 And trenches of problem-solving 🤔💻<br>
-                Craft honed to an art form 🎨<br>
-                <br>
-                But when coding's done<br>
+                Craft honed to an art form 🎨</p>
+              <p>But when coding's done<br>
                 I turn to books and stories 📚<br>
                 Philosophy and science fiction 🤔🚀<br>
-                A world of literary glories 🌎📖<br>
-                <br>
-                And when not lost in words<br>
+                A world of literary glories 🌎📖</p>
+              <p>And when not lost in words<br>
                 I venture out to new lands 🌍🧭<br>
                 Exploring different cultures 🗺️🌍<br>
-                Finding lost roads again 🛣️👀<br>
-              </div>
+                Finding lost roads again 🛣️👀</p>
             </div>
+          </div>
         </div>
-        <hr>
+      </section>
+      <hr class="section-divider">
     </main>
-        <iframe src="footer.html" style="width:100%; height:100px;" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
-    </body>
+    <footer class="site-footer">
+      <div class="site-container site-footer__content">
+        <span class="site-footer__title">Sid ~</span>
+        <div class="site-footer__links" role="list">
+          <a class="site-footer__link" role="listitem" href="https://www.linkedin.com/in/sidtexastech/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+            <i class="fa fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a class="site-footer__link" role="listitem" href="https://github.com/BitsAndAtoms" target="_blank" rel="noopener" aria-label="GitHub profile">
+            <i class="fa fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a class="site-footer__link" role="listitem" href="https://scholar.google.com/citations?hl=en&user=5bPHWm0AAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar profile">
+            <i class="fa fa-google"></i>
+            <span>Scholar</span>
+          </a>
+          <a class="site-footer__link" role="listitem" href="https://drive.google.com/file/d/1qZ4BJmOKnejTTSMQXRUZg-JGg2ku1aVK/view?usp=sharing" target="_blank" rel="noopener" aria-label="Download CV">
+            <i class="fa fa-download"></i>
+            <span>Download CV</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

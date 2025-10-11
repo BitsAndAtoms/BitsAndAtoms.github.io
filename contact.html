@@ -1,27 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head id="common-head">
+  <head>
     <meta charset="UTF-8">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-      $(function() {
-        $("#common-head").load("common-head.html");
-      });
-    </script>
+    <title>Contact | Sid Gupta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Image processing, Java, Python, Jobseeker, Teaching">
+    <meta name="description" content="Sid Gupta — programming, applied engineering, and research portfolio.">
+    <meta name="author" content="Sid Gupta">
+    <meta name="robots" content="index, follow">
+    <link rel="shortcut icon" href="images/simplex.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <script defer src="js/site.js"></script>
   </head>
   <body>
-    <iframe src="header.html" style="width:100%; height:220px;" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
-
-    <main class="container-fluid">
-	<div class="container contact-container">
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdtxEpxMEYOHOwGilUHSvHhS9yBdYpg8UvHpMi-Q2YbLp48Lg/viewform?embedded=true" width="680" height="437" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-		
-	</div>
-	<hr>
-	</main>
-
-    <iframe src="footer.html" style="width:100%; height:100px;" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+    <header class="site-header">
+      <div class="site-header__banner">
+        <div class="site-container">
+          <h1 class="site-title" aria-label="Sid Gupta">
+            <span class="site-title__latin">Sid</span>
+            <span class="site-title__paren" lang="hi">(सिद्धार्थ)</span>
+            <span class="site-title__latin site-title__surname">Gupta</span>
+          </h1>
+          <p class="site-tagline">Engineering clarity across data and systems.</p>
+        </div>
+      </div>
+      <div class="site-nav">
+        <div class="site-container site-nav__inner">
+          <button class="site-nav__toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="site-nav__toggle-bar"></span>
+          </button>
+          <nav id="primary-navigation" class="site-nav__menu" aria-label="Primary">
+            <ul class="site-nav__list">
+              <li class="site-nav__item"><a class="site-nav__link" data-nav-link href="index.html">About</a></li>
+              <li class="site-nav__item"><a class="site-nav__link" data-nav-link href="resume.html">Experience</a></li>
+              <li class="site-nav__item"><a class="site-nav__link" data-nav-link href="project.html">Research</a></li>
+              <li class="site-nav__item"><a class="site-nav__link" data-nav-link href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="page-content">
+      <section class="contact">
+        <div class="site-container">
+          <div class="contact__card card">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="contact__intro">Share a note about collaborations, research, or adventures you think align with dunes, dreams, and spice.</p>
+            <div class="contact__form">
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdtxEpxMEYOHOwGilUHSvHhS9yBdYpg8UvHpMi-Q2YbLp48Lg/viewform?embedded=true" title="Contact form" loading="lazy" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="section-divider">
+    </main>
+    <footer class="site-footer">
+      <div class="site-container site-footer__content">
+        <span class="site-footer__title">Sid ~</span>
+        <div class="site-footer__links" role="list">
+          <a class="site-footer__link" role="listitem" href="https://www.linkedin.com/in/sidtexastech/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+            <i class="fa fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a class="site-footer__link" role="listitem" href="https://github.com/BitsAndAtoms" target="_blank" rel="noopener" aria-label="GitHub profile">
+            <i class="fa fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a class="site-footer__link" role="listitem" href="https://scholar.google.com/citations?hl=en&user=5bPHWm0AAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar profile">
+            <i class="fa fa-google"></i>
+            <span>Scholar</span>
+          </a>
+          <a class="site-footer__link" role="listitem" href="https://drive.google.com/file/d/1qZ4BJmOKnejTTSMQXRUZg-JGg2ku1aVK/view?usp=sharing" target="_blank" rel="noopener" aria-label="Download CV">
+            <i class="fa fa-download"></i>
+            <span>Download CV</span>
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

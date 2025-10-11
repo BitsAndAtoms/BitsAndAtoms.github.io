@@ -1,51 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head id="common-head">
+  <head>
+    <meta charset="UTF-8">
+    <title>Experience | Sid Gupta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Image processing, Java, Python, Jobseeker, Teaching">
+    <meta name="description" content="Sid Gupta — programming, applied engineering, and research portfolio.">
+    <meta name="author" content="Sid Gupta">
+    <meta name="robots" content="index, follow">
+    <link rel="shortcut icon" href="images/simplex.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <script defer src="js/site.js"></script>
   </head>
   <body>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-      $(function() {
-        $("#common-head").load("common-head.html");
-      });
-    </script>
-    <iframe src="header.html" style="width:100%; height:220px;" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
-    <main class="container-fluid resume-container">
-                <div class="row">
-			<div class="col-sm-4">
-				<div class="photo-wrapper">
-					<div class="sticky-note">⏳ Eternity to a photon is a flash ⚡</div>
-					<img class="img-responsive center resume-photo" src="images/los_angles.jpg" alt="Picture of Los Angeles">
-				  </div>
-				  <div class="caption text-center">
-				Santa Monica Pier<br>Genetic Society of America Conference, 2017
-			  </div>
-			</div>
-			<div class="col-sm-8">
-			  <h4 >Work Experience</h4>
-			  
-                          <div class="work-experience-item">
-                                <h5 class="work-experience-title">Senior Cloud &amp; AI Platform Engineer, Schlumberger<span class="work-experience-date">Sep 2022 - Present</span></h5>
-                                <p class="work-experience-description">&bull; Scaled SLB&apos;s AI platform across AKS and GCP, adding LLM Mesh and Retrieval-Augmented Generation for global teams.<br>
-                                  &bull; Built OpenTelemetry observability and GitOps automation with ArgoCD/Azure DevOps while optimizing multi-tenant microservices and mentoring engineers.</p>
-                          </div>
-                          <div class="work-experience-item">
-                                <h5 class="work-experience-title">Lead Software Engineer, NemaLife Inc.<span class="work-experience-date">Jan 2020 - Aug 2022</span></h5>
-                                <p class="work-experience-description">&bull; Delivered an Azure-hosted Django/React platform with FastAPI extensions that automated bioassay data flows and vision tooling.<br>
-                                  &bull; Led a seven-person team to streamline CI/CD and data stewardship across releases.</p>
-                          </div>
-                          <div class="work-experience-item">
-                                <h5 class="work-experience-title">Research Programmer &amp; Mathematics/STEM Instructor, Texas Tech University<span class="work-experience-date">2015 - 2019</span></h5>
-                                <p class="work-experience-description">&bull; Advanced PepsiCo&apos;s product R&amp;D with Python analytics and scientific computing solutions.<br>
-                                  &bull; Coached ~200 K&ndash;12 cohorts in mathematics and STEM with strong feedback from participants.</p>
-                          </div>
-                          <div class="work-experience-item">
-                                <h5 class="work-experience-title">Earlier Experience<span  class="work-experience-date">2010 - 2014</span></h5>
-                                <p class="work-experience-description">&bull; Reliance Industries &mdash; Engineering Staff (2014) &bull; Tata Steel &mdash; QA Intern (2011) &bull; Ipca Labs &mdash; Data Intern (2010)</p>
-                          </div>
-			</div>
-		  </div>
-		  <hr>
-		  <iframe src="footer.html" style="width:100%; height:100px;" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
-		</main>
-	
+    <header class="site-header">
+      <div class="site-header__banner">
+        <div class="site-container">
+          <h1 class="site-title" aria-label="Sid Gupta">
+            <span class="site-title__latin">Sid</span>
+            <span class="site-title__paren" lang="hi">(सिद्धार्थ)</span>
+            <span class="site-title__latin site-title__surname">Gupta</span>
+          </h1>
+          <p class="site-tagline">Engineering clarity across data and systems.</p>
+        </div>
+      </div>
+      <div class="site-nav">
+        <div class="site-container site-nav__inner">
+          <button class="site-nav__toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="site-nav__toggle-bar"></span>
+          </button>
+          <nav id="primary-navigation" class="site-nav__menu" aria-label="Primary">
+            <ul class="site-nav__list">
+              <li class="site-nav__item"><a class="site-nav__link" data-nav-link href="index.html">About</a></li>
+              <li class="site-nav__item"><a class="site-nav__link" data-nav-link href="resume.html">Experience</a></li>
+              <li class="site-nav__item"><a class="site-nav__link" data-nav-link href="project.html">Research</a></li>
+              <li class="site-nav__item"><a class="site-nav__link" data-nav-link href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="page-content">
+      <section class="resume">
+        <div class="site-container">
+          <div class="resume__grid">
+            <aside class="resume__aside">
+              <div class="resume__note">⏳ Eternity to a photon is a flash ⚡</div>
+              <figure class="resume__portrait card">
+                <img class="resume-photo" src="images/los_angles.jpg" alt="Santa Monica Pier at sunset">
+                <figcaption class="resume__caption">Santa Monica Pier · Genetic Society of America Conference, 2017</figcaption>
+              </figure>
+            </aside>
+            <div class="resume__content card">
+              <h2 class="section-title">Experience</h2>
+              <div class="resume__timeline">
+                <article class="resume__item">
+                  <header class="resume__item-header">
+                    <h3 class="resume__role">Senior Cloud &amp; AI Platform Engineer · Schlumberger</h3>
+                    <span class="resume__date">Sep 2022 – Present</span>
+                  </header>
+                  <ul class="resume__list">
+                    <li>Scaled SLB's AI platform across AKS and GCP, adding LLM Mesh and retrieval-augmented pipelines for global teams.</li>
+                    <li>Built OpenTelemetry observability and GitOps automation with ArgoCD/Azure DevOps while mentoring platform engineers.</li>
+                  </ul>
+                </article>
+                <article class="resume__item">
+                  <header class="resume__item-header">
+                    <h3 class="resume__role">Lead Software Engineer · NemaLife Inc.</h3>
+                    <span class="resume__date">Jan 2020 – Aug 2022</span>
+                  </header>
+                  <ul class="resume__list">
+                    <li>Delivered an Azure-hosted Django/React platform with FastAPI extensions that automated bioassay data flows and vision tooling.</li>
+                    <li>Led a seven-person team to streamline CI/CD and data stewardship while accelerating research releases.</li>
+                  </ul>
+                </article>
+                <article class="resume__item">
+                  <header class="resume__item-header">
+                    <h3 class="resume__role">Research Programmer &amp; STEM Instructor · Texas Tech University</h3>
+                    <span class="resume__date">2015 – 2019</span>
+                  </header>
+                  <ul class="resume__list">
+                    <li>Advanced PepsiCo's product R&amp;D with Python analytics and scientific computing solutions.</li>
+                    <li>Coached ~200 K–12 cohorts in mathematics and STEM with strong feedback from participants.</li>
+                  </ul>
+                </article>
+                <article class="resume__item">
+                  <header class="resume__item-header">
+                    <h3 class="resume__role">Earlier Experience</h3>
+                    <span class="resume__date">2010 – 2014</span>
+                  </header>
+                  <p class="resume__summary">Reliance Industries — Engineering Staff (2014) · Tata Steel — QA Intern (2011) · Ipca Labs — Data Intern (2010)</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="section-divider">
+    </main>
+    <footer class="site-footer">
+      <div class="site-container site-footer__content">
+        <span class="site-footer__title">Sid ~</span>
+        <div class="site-footer__links" role="list">
+          <a class="site-footer__link" role="listitem" href="https://www.linkedin.com/in/sidtexastech/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+            <i class="fa fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a class="site-footer__link" role="listitem" href="https://github.com/BitsAndAtoms" target="_blank" rel="noopener" aria-label="GitHub profile">
+            <i class="fa fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a class="site-footer__link" role="listitem" href="https://scholar.google.com/citations?hl=en&user=5bPHWm0AAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar profile">
+            <i class="fa fa-google"></i>
+            <span>Scholar</span>
+          </a>
+          <a class="site-footer__link" role="listitem" href="https://drive.google.com/file/d/1qZ4BJmOKnejTTSMQXRUZg-JGg2ku1aVK/view?usp=sharing" target="_blank" rel="noopener" aria-label="Download CV">
+            <i class="fa fa-download"></i>
+            <span>Download CV</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
