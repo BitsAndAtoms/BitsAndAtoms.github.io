@@ -324,6 +324,7 @@ h4 {
 }
 
 .hero__portrait-image {
+  display: block;
   width: min(100%, 520px);
   margin: 0 auto;
   border-radius: var(--radius-lg);
