@@ -1,58 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head id="common-head">
-        <meta charset="UTF-8">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script>
-          $(function() {
-            $("#common-head").load("common-head.html");
-          });
-        </script>
-      </head>
-<body>
-        <iframe src="header.html" style="width:100%; height:220px;" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+  <head id="common-head">
     <meta charset="UTF-8">
-
-    <main class="container-fluid">
-        <div class="row margin-b-2">
-                <div class="col-sm-4 text-center">
-                    <img id="img-override"  class="img-responsive image-container center " src="images/siddhartha_gupta.jpg" alt="Picture of Siddhartha Gupta" style="height:200px;">
-                </div>
-                <div class="col-sm-4">
-                    
-                    <h4>Dunes, Dreams & Spice</h4>
-                    <div class="quote">
-                        <p>
-                            Come you lost Atoms to your Centre draw.<br>
-                            And be the Eternal Mirror that you saw.<br>
-                            &emsp;&emsp; Rays that have wander'd into Darkness wide.<br>
-                            Return and back into your Sun subside
-                        </p>
-                        <cite>~ Farid al-Din Attar</cite>
-                    </div>
-                    
-                </div>
-                <div class="col-sm-4">
-                    <div class="poem">
-                My journey has taken me<br>
+    <title>About | Siddhartha Gupta</title>
+    <script src="js/head-loader.js"></script>
+  </head>
+  <body>
+    <div id="site-header"></div>
+    <main class="page-content">
+      <section class="hero">
+        <div class="site-container">
+          <div class="hero__grid">
+            <figure class="hero__portrait card">
+              <img class="hero__portrait-image" src="images/siddhartha_gupta.jpg" alt="Portrait of Siddhartha Gupta">
+              <figcaption class="hero__caption">Dunes, Dreams &amp; Spice</figcaption>
+            </figure>
+            <blockquote class="quote card">
+              <p>
+                Come you lost Atoms to your Centre draw.<br>
+                And be the Eternal Mirror that you saw.<br>
+                Rays that have wander'd into Darkness wide.<br>
+                Return and back into your Sun subside.
+              </p>
+              <cite>Farid al-Din Attar</cite>
+            </blockquote>
+            <div class="poem card">
+              <h2 class="poem__title">Data 📌 Haiku</h2>
+              <p>My journey has taken me<br>
                 Through halls of academia 🎓<br>
                 And trenches of problem-solving 🤔💻<br>
-                Craft honed to an art form 🎨<br>
-                <br>
-                But when coding's done<br>
+                Craft honed to an art form 🎨</p>
+              <p>But when coding's done<br>
                 I turn to books and stories 📚<br>
                 Philosophy and science fiction 🤔🚀<br>
-                A world of literary glories 🌎📖<br>
-                <br>
-                And when not lost in words<br>
+                A world of literary glories 🌎📖</p>
+              <p>And when not lost in words<br>
                 I venture out to new lands 🌍🧭<br>
                 Exploring different cultures 🗺️🌍<br>
-                Finding lost roads again 🛣️👀<br>
-              </div>
+                Finding lost roads again 🛣️👀</p>
             </div>
+          </div>
         </div>
-        <hr>
+      </section>
+      <hr class="section-divider">
     </main>
-        <iframe src="footer.html" style="width:100%; height:100px;" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
-    </body>
+    <div id="site-footer"></div>
+  </body>
 </html>

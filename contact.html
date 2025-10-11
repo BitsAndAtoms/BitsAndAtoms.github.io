@@ -2,26 +2,25 @@
 <html lang="en">
   <head id="common-head">
     <meta charset="UTF-8">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-      $(function() {
-        $("#common-head").load("common-head.html");
-      });
-    </script>
+    <title>Contact | Siddhartha Gupta</title>
+    <script src="js/head-loader.js"></script>
   </head>
   <body>
-    <iframe src="header.html" style="width:100%; height:220px;" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
-
-    <main class="container-fluid">
-	<div class="container contact-container">
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdtxEpxMEYOHOwGilUHSvHhS9yBdYpg8UvHpMi-Q2YbLp48Lg/viewform?embedded=true" width="680" height="437" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-		
-	</div>
-	<hr>
-	</main>
-
-    <iframe src="footer.html" style="width:100%; height:100px;" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+    <div id="site-header"></div>
+    <main class="page-content">
+      <section class="contact">
+        <div class="site-container">
+          <div class="contact__card card">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="contact__intro">Share a note about collaborations, research, or adventures you think align with dunes, dreams, and spice.</p>
+            <div class="contact__form">
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdtxEpxMEYOHOwGilUHSvHhS9yBdYpg8UvHpMi-Q2YbLp48Lg/viewform?embedded=true" title="Contact form" loading="lazy" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="section-divider">
+    </main>
+    <div id="site-footer"></div>
   </body>
 </html>
