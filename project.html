@@ -17,7 +17,34 @@
     <script defer src="js/site.js"></script>
   </head>
   <body>
-    <div data-include="header.html"></div>
+    <header class="site-header">
+      <div class="site-header__banner">
+        <div class="site-container">
+          <h1 class="site-title" aria-label="Sid (सिद्धार्थ) Gupta">
+            <span class="site-title__latin">
+              Sid <span class="site-title__devanagari" lang="hi">(सिद्धार्थ)</span> Gupta
+            </span>
+          </h1>
+          <p class="site-tagline">Engineering clarity across data and systems.</p>
+        </div>
+      </div>
+      <div class="site-nav">
+        <div class="site-container site-nav__inner">
+          <button class="site-nav__toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="site-nav__toggle-bar"></span>
+          </button>
+          <nav id="primary-navigation" class="site-nav__menu" aria-label="Primary">
+            <ul class="site-nav__list">
+              <li class="site-nav__item"><a class="site-nav__link" data-nav-link href="index.html">About</a></li>
+              <li class="site-nav__item"><a class="site-nav__link" data-nav-link href="resume.html">Experience</a></li>
+              <li class="site-nav__item"><a class="site-nav__link" data-nav-link href="project.html">Research</a></li>
+              <li class="site-nav__item"><a class="site-nav__link" data-nav-link href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
     <main class="page-content">
       <section class="projects">
         <div class="site-container">
