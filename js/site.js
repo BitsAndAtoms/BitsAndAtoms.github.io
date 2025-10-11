@@ -27,7 +27,7 @@
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     header.querySelectorAll('[data-nav-link]').forEach((link) => {
       const target = link.getAttribute('href');
-      if (target === currentPage || (!currentPage && target === 'index.html')) {
+      if (target === currentPage) {
         link.classList.add('active');
       }
     });
