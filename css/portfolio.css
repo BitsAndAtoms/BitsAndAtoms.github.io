@@ -618,7 +618,7 @@ h4 {
   font-size: 0.85rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .card {
     padding: 1.75rem;
   }
