@@ -609,15 +609,33 @@ h4 {
 .site-footer__link {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--color-primary);
   background: rgba(255, 255, 255, 0.65);
-  padding: 0.75rem 1rem;
+  padding: 0.75rem;
   border-radius: var(--radius-sm);
   box-shadow: var(--shadow-soft);
+  min-width: 3.25rem;
+  min-height: 3.25rem;
+}
+
+.site-footer__icon {
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.site-footer__icon-stack {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.site-footer__link-label {
+  letter-spacing: 0.15em;
 }
 
 .site-footer__link:hover,
