@@ -542,8 +542,8 @@ h4 {
 
 .project-card__title {
   font-size: 1.2rem;
-  letter-spacing: var(--tracking-wide);
-  text-transform: uppercase;
+  letter-spacing: var(--tracking-tight);
+  text-transform: none;
   margin-bottom: 1rem;
 }
 
